@@ -34,3 +34,13 @@ function displayWeather(event) {
         var visitedCityNames = JSON.stringify(searchedCities);
         localStorage.setItem("visitedCities", visitedCityNames);
 
+        //creates list items from cities saved in localstorage
+        for (let i = 0; i < searchedCities.length; i++) {
+            var list = document.createElement("li");
+            list.setAttribute("class", "list-group-item");
+            list.setAttribute("id", "city-link");
+            list.textContent = searchedCities[i];
+            cityList.appendChild(list);
+        }
+    }
+}
