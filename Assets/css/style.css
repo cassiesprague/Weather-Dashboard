@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+.forecast {
+    font-size: 0.9em;
+}
+
+.topnav {
+    text-align: center;
+    font-size: 18px;
+    padding: 12px 14px;
+}
+
+.city-name {
+    font-weight: bold;
+    font-size: x-large;
+}
+
+p.current,
+.city-name {
+    color: #000000;
+}
+
+p {
+    color: white;
+}
