@@ -8,3 +8,16 @@ This application allows users to search a city and have it generate the current 
 My motivation for creating this application was an easy way to show the upcoming weather since I travel frequently. It is also helpful since I like to work outside and let my dog play outside, so I like to know what upcoming days will be nice to be outside. 
 
 
+
+## Table of Contents
+-[Installation](#installation)
+-[Usage](usage)
+-[Credits](credits)
+-[License](license)
+-[Badges](badges)
+-[Features](features)
+-[Contributing](contributing)
+-[Tests](tests)
+-[Questions](questions)
+
+
