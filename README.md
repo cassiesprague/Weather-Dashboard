@@ -34,7 +34,7 @@ I am the creator of this project.
 
 
 ## License
-This application repository is covered by an MIT Licnese.
+This application repository is covered by an MIT License. Click here to learn more: [MIT](https://choosealicense.com/licenses/mit/)
 
 
 ## Badges
