@@ -30,7 +30,7 @@ Once you have your own copy of the application, open it in your preferred browse
 
 
 ## Credits
-I am not accepting collaborators for this project at the moment. 
+I am the creator of this project. 
 
 
 ## License
@@ -42,3 +42,11 @@ Not applicable
 
 
 ## Features
+-Search Engine
+-Saved Searches
+-Current Days Weather
+-5 Day Forecast
+
+
+## Contributing
+I am not accepting contributers for this project at the moment.
