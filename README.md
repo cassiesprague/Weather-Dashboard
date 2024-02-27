@@ -28,3 +28,17 @@ To install this Weather Dashboard, click on the link below, and copy it to the f
 ## Usage
 Once you have your own copy of the application, open it in your preferred browser. To search for a weather in the city of your choosing, go under Search for a City and type the city. Hit the search button and view the weather for that city. Repeat these steps for any additional cities you want to know the weather for. The cities you have searched will be saved and appear under the search bar so you can navigate to them easier without needing to retype the city in the search bar again.
 
+
+## Credits
+I am not accepting collaborators for this project at the moment. 
+
+
+## License
+This application repository is covered by an MIT Licnese.
+
+
+## Badges
+Not applicable
+
+
+## Features
