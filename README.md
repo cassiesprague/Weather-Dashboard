@@ -21,3 +21,10 @@ My motivation for creating this application was an easy way to show the upcoming
 -[Questions](questions)
 
 
+## Installation
+To install this Weather Dashboard, click on the link below, and copy it to the folder of your choosing. Navigate to the file in your terminal and open in VS Code or whatever editing application you use. Make sure you are in the correct folder in VS Code, and run the application!
+
+
+## Usage
+Once you have your own copy of the application, open it in your preferred browser. To search for a weather in the city of your choosing, go under Search for a City and type the city. Hit the search button and view the weather for that city. Repeat these steps for any additional cities you want to know the weather for. The cities you have searched will be saved and appear under the search bar so you can navigate to them easier without needing to retype the city in the search bar again.
+
