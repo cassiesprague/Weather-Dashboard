@@ -50,3 +50,13 @@ Not applicable
 
 ## Contributing
 I am not accepting contributers for this project at the moment.
+
+
+## Tests
+No tests for this repository application at this time.
+
+
+## Questions
+For any questions about this repository, feel free to contact me through the following link to GitHub or to my listed email. Thank you!
+[GitHub](https://github.com/cassiesprague)
+Email: cassie.sprague.18@gmail.com
