@@ -1,17 +1,16 @@
 // Open Weather Map link: https://openweathermap.org/forecast5
 // Open Weather Map API key: daf8f38305e86af0479c8ba66ec63552
 
+//Below is a list of all the videos I watched to help me make this weather dashboard
+// https://www.youtube.com/watch?v=OE7kml0pigw
+// https://www.youtube.com/watch?v=6trGQWzg2AI&t=2647s 
+// https://www.youtube.com/watch?v=QEu8_5bYm-w&t=106s 
+
 
 //Below are the variables
-//The link below is a reference I used to help with the js for this weather dashboard
-//https://www.youtube.com/watch?v=GXrDEA3SIOQ
-//The link below is a more in depth video I watched and wanted to note because even though I didn't use much of it, it was very informative
-//https://www.youtube.com/watch?v=OE7kml0pigw
 const APIKey: 'daf8f38305e86af0479c8ba66ec63552';
-const button = document.getElementById('search-button');
-const weather = document.getElementById('weather');
-const location = document.getElementById('location')
-const recentSearches = document.getElementById('recent-searches');
+
+
 
 
 // WHEN I search for a city
@@ -31,54 +30,22 @@ function displayRecentSearches() {
 displayRecentSearches();
 
 
-// button.addEventListener('click', function(){
-// fetch('https://api.openweathermap.org/data/2.5/weather?q='+ input.value+'&appid=daf8f38305e86af0479c8ba66ec63552')
-//     .then(response => response.json())
-//     .then(data => console.log(data))
-
-//     .catch(err => alert("Invalid City Name"))
-// })
-
-
-
 
 // WHEN I view current weather conditions for that city
 // THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the 
 // humidity, and the wind speed
 
 
+
+
+
 // WHEN I view future weather conditions for that city
 // THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the 
 // temperature, the wind speed, and the humidity
 
-const forecast = document.createElement('div');
-forecast.id = 'forecast';
-weather.appendChild(forecast);
 
-search.addEventListener('click', function () {
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q='+ input.value+'&appid=daf8f38305e86af0479c8ba66ec63552`)
-        .then(response => response.json())
-        .then(data => {
-            const currentWeather = data.list[0].weather[0].description;
-            const currentTemp = Math.round(data.list[0].main.temp - 273.15);
-            weather.innerHTML = `
-                <p>Current weather: ${currentWeather}</p>
-                <p>Current temperature: ${currentTemp}°C</p>
-            `;
-            forecast.innerHTML = '';
-            for (let i = 1; i <= 5; i++) {
-                const date = new Date(data.list[i].dt * 1000).toDateString();
-                const temp = Math.round(data.list[i].main.temp - 273.15);
-                const condition = data.list[i].weather[0].description;
-                forecast.innerHTML += `
-                    <p>${date}: ${temp}°C, ${condition}</p>
-                `;
-            }
-        })
-        .catch(error => {
-            weather.innerHTML = `<p>Error: ${error}</p>`;
-        });
-});
+
+
 
 // WHEN I click on a city in the search history
 // THEN I am again presented with current and future conditions for that city
