@@ -5,6 +5,8 @@
 //Below are the variables
 //The link below is a reference I used to help with the js for this weather dashboard
 //https://www.youtube.com/watch?v=GXrDEA3SIOQ
+//The link below is a more in depth video I watched and wanted to note because even though I didn't use much of it, it was very informative
+//https://www.youtube.com/watch?v=OE7kml0pigw
 const APIKey: 'daf8f38305e86af0479c8ba66ec63552';
 const button = document.getElementById('search-button');
 const weather = document.getElementById('weather');
@@ -14,7 +16,19 @@ const recentSearches = document.getElementById('recent-searches');
 
 // WHEN I search for a city
 // THEN I am presented with current and future conditions for that city and that city is added to the search history
+function searchCity() {
+    var city = document.getElementById("cityInput").value;
+    var searches = JSON.parse(localStorage.getItem("recentSearches")) || [];
+    searches.push(city);
+    localStorage.setItem("recentSearches", JSON.stringify(searches));
+}
 
+function displayRecentSearches() {
+    var searches = JSON.parse(localStorage.getItem("recentSearches")) || [];
+    console.log("Recent Searches:", searches);
+}
+
+displayRecentSearches();
 
 
 // button.addEventListener('click', function(){
