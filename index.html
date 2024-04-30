@@ -10,11 +10,13 @@
 </head>
 
 <body>
+    <!--Below is the title of the page-->
     <header class="header">
         <h1>Weather Dashboard</h1>
     </header>
 
     <!-- TO DO: CREATE SEARCH FOR A CITY BOX -->
+    <!--Below is the search container that says enter  city name and the search button-->
     <div class="search-container">
         <input type="text" id="cityInput" class="search-input" placeholder="Enter City Name Here">
         <button onclick="searchCity()" class="search-button">Search</button>
@@ -23,13 +25,36 @@
 
 
     <!-- TO DO: CREATE TODAYS WEATHER BOX -->
+    <!--Below is the current weather container which shows the city name, date, icon, temperature, humidity, and wind speed-->
+    <div class="current-weather-container">
+        <div class="current-info">
+            <div class="current-icon-container">
+                <canvas id="current-icon" width="100" height="100"></canvas>
+            </div>
 
+            <div class="city-name" id="city-name">City</div>
+            <div class="date" id="date">Date</div>
 
+            <div class="current-weather" id="current-weather">
+                <div class="current-weather-stats">
+                    <div>Temperature</div>
+                    <div>TBD</div>
+                </div>
+                <div class="current-weather-stats">
+                    <div>Humidity</div>
+                    <div>TBD</div>
+                </div>
+                <div class="current-weather-stats">
+                    <div>Wind Speed</div>
+                    <div>TBD</div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
     <!-- TO DO: CREATE 5 DAY FORECAST BOX -->
-
 
 
 
