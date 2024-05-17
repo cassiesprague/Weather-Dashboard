@@ -5,6 +5,8 @@
 // https://www.youtube.com/watch?v=OE7kml0pigw
 // https://www.youtube.com/watch?v=6trGQWzg2AI&t=2647s 
 // https://www.youtube.com/watch?v=QEu8_5bYm-w&t=106s 
+// https://www.youtube.com/watch?v=y9ZBHoUTWjY&list=PLAEoBV_GLyq4klW-2Pm75_5-r4oHhwqlm&index=3 
+// https://www.youtube.com/watch?v=IfG4A8YfxsY 
 
 
 //Below are the variables
