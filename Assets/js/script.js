@@ -6,30 +6,59 @@
 // https://www.youtube.com/watch?v=6trGQWzg2AI&t=2647s 
 // https://www.youtube.com/watch?v=QEu8_5bYm-w&t=106s 
 // https://www.youtube.com/watch?v=y9ZBHoUTWjY&list=PLAEoBV_GLyq4klW-2Pm75_5-r4oHhwqlm&index=3 
+// https://www.youtube.com/watch?v=KT6Jaxl0JM4&list=PLAEoBV_GLyq4klW-2Pm75_5-r4oHhwqlm&index=4 
 // https://www.youtube.com/watch?v=IfG4A8YfxsY 
 
 
 //Below are the variables
-const APIKey: 'daf8f38305e86af0479c8ba66ec63552';
+
 
 
 
 
 // WHEN I search for a city
 // THEN I am presented with current and future conditions for that city and that city is added to the search history
-function searchCity() {
-    var city = document.getElementById("cityInput").value;
-    var searches = JSON.parse(localStorage.getItem("recentSearches")) || [];
-    searches.push(city);
-    localStorage.setItem("recentSearches", JSON.stringify(searches));
-}
+$(document).ready(function(){
+    $('#searchButton').click(function(){
 
-function displayRecentSearches() {
-    var searches = JSON.parse(localStorage.getItem("recentSearches")) || [];
-    console.log("Recent Searches:", searches);
-}
+            var city = $('#city').val();
 
-displayRecentSearches();
+            if(city!= ''){
+
+                $.ajax({
+
+                    url: "https://api.openweathermap.org/data/2.5/weather?q= " + city + "&units=imperial" + "&appid=daf8f38305e86af0479c8ba66ec63552",
+                    type: "GET",
+                    dataTyle: "jsonp",
+                    success: function(data){
+                        
+                    }
+                });
+
+            }else{
+                $('#error').html('Enter City');
+            }
+
+    });
+
+
+});
+
+
+
+// function searchCity() {
+//     var city = document.getElementById("cityInput").value;
+//     var searches = JSON.parse(localStorage.getItem("recentSearches")) || [];
+//     searches.push(city);
+//     localStorage.setItem("recentSearches", JSON.stringify(searches));
+// }
+
+// function displayRecentSearches() {
+//     var searches = JSON.parse(localStorage.getItem("recentSearches")) || [];
+//     console.log("Recent Searches:", searches);
+// }
+
+// displayRecentSearches();
 
 
 
